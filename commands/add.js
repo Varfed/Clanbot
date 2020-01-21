@@ -14,16 +14,6 @@ module.exports.run = async (bot, message, args) => {
     log.send(`Ник - ${dbUserr.user.username}, \nРоль - ${rolle}, \n ID - ${dbUserr.id}`)
     log.send('``` ```')
 
-
-    // const addbase = new Base ({
-    //     _id: mongoose.Types.ObjectId(),
-    //     role: rolle,
-    //     bName: dbUserr.user.username,
-    //     bId: dbUserr.id
-    // })
-    // addbase.save()
-    // .then(result => console.log(result))
-    // .catch(err => console.log(err))
     message.channel.send("Пользователь " + dbUserr + " добавлен в базу данных! ")
     } else {
         message.reply("Команда выключена!")

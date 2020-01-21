@@ -1,6 +1,4 @@
 const Discord = require("discord.js")
-const mongoose = require("mongoose")
-let on_of = true
 
 module.exports.run = async (bot, message, args) => {
     await message.delete();

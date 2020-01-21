@@ -10,15 +10,7 @@ module.exports.run = async (bot, message, args) => {
 
     log.send(`Ник - ${dbUserr.user.username}, \nРоль - ${rolle}, \n ID - ${dbUserr.id}`)
     log.send('``` ```')
-    // const addbase = new Base ({
-    //     _id: mongoose.Types.ObjectId(),
-    //     role: rolle,
-    //     bName: dbUser.username,
-    //     bId: dbUser.id
-    // })
-    // addbase.save()
-    // .then(result => console.log(result))
-    // .catch(err => console.log(err))
+
     message.channel.send("Пользователь " + dbUser.username + " добавлен в базу данных.")
 }
 

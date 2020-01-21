@@ -13,16 +13,7 @@ module.exports.run = async (bot, message, args) => {
 
     log.send(`Nickname - ${cUser}, \n Clan - ${clann}, \n ID - ${cUser.id}`)
     log.send('``` ```')
-    // const base = new Clan({
-    //     _id: mongoose.Types.ObjectId(),
-    //     cName: cUser.user.username,
-    //     cId: cUser.id,
-    //     clan: clann,
-    //     distag: cUser
-    // })
-    // base.save()
-    // .then(result => console.log(result))
-    // .catch(err => console.log(err))
+
     message.channel.send("Готово!")
 
     
