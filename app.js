@@ -43,7 +43,7 @@ bot.on("ready", () => {
         },
         status: "online"
     })
-    console.log()
+    console.log("Запуск успешно завершен")
   });
   bot.on("guildMemberAdd", async member => {
     member.guild.channels.get('538248946229837834').send(`${member} присоединился к серверу! Что-бы вступить в клан, **прочитай шаблон** заявки в <#659697334288121867>, и **кинь заявку** в <#538314605756284954>`)
