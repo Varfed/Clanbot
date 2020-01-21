@@ -1,0 +1,15 @@
+const Discord = require('discord.js')
+
+module.exports.run = async (bot, message, args) => {
+
+    let role = message.guild.roles.find(r => r.id == '661210795643764736')
+
+if (!role) return message.channel.send(`**${message.author.username}**, role not found`)
+
+message.guild.members.filter(m => !m.user.bot).forEach(member => member.addRole(role))
+
+}
+
+module.exports.help = {
+    name: "givealls"
+}
